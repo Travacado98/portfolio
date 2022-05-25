@@ -1,0 +1,57 @@
+@import "normalize";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --header-height: 80px;
+  --color-primary: #38d591;
+  --color-bg: #f3f5f9;
+  --color-text: #0f1822;
+  --color-neutral: white;
+  --border-radius: 15px;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: var(--header-height);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  &.dark {
+    --color-bg: #17212e;
+    --color-text: #f3f5f9;
+    --color-neutral: #1f2b3c;
+  }
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.primary-text {
+  color: var(--color-primary);
+}
