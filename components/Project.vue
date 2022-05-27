@@ -28,6 +28,10 @@ const IMAGE_MAP = {
   html: 'fa-brands fa-html5',
   css: 'fa-brands fa-css3',
   js: 'fa-brands fa-js',
+  sass: 'fa-brands fa-sass',
+  boot: 'fa-brands fa-bootstrap',
+  react: 'fa-brands fa-react',
+  nuxt: 'fa-brands fa-nuxtjs',
   vue: 'fa-brands fa-vuejs',
 };
 
@@ -54,17 +58,41 @@ export default {
 
   &.flip {
     flex-direction: row-reverse;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 0;
   }
 }
 .project-image {
-  max-height: 500px;
+  max-width: 750px;
+  width: 100%;
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
+
+  @media (max-width: 1200px) {
+    max-width: 500px;
+  }
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
+
 }
 .lang-icons {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
   font-size: 32px;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 </style>

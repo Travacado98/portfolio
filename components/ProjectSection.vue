@@ -17,9 +17,10 @@ export default {
   data() {
     return {
       projects: [
-        { title: 'To Do List', langs: ['html', 'css', 'js'], link: 'https://todolist-4e182.web.app/', image: 'todo1.png' },
-        { title: 'Expense List', langs: ['html', 'css', 'js', 'vue'], link: 'https://expense-tracker-95ecd.web.app/', image: 'expense1.png' },
-        { title: 'Project #3', langs: ['html', 'css', 'js'], link: 'https://youtube.com', image: 'todo1.png' },
+        { title: 'Game of Thrones Wiki', langs: ['react', 'boot', 'html', 'css', 'js'], link: 'https://todolist-4e182.web.app/', image: 'todo1.png' },
+        { title: 'Expense Tracker', langs: ['vue', 'html', 'css', 'sass', 'js'], link: 'https://expense-tracker-95ecd.web.app/', image: 'expense1.png' },
+        { title: 'To-Do List', langs: ['html', 'css', 'sass', 'js'], link: 'https://todolist-4e182.web.app/', image: 'todo1.png' },
+        { title: 'Milky Way Marketing Website', langs: ['html', 'css', 'sass'], link: 'https://milk-store-1f23c.web.app/', image: 'todo1.png' },
       ],
     };
   },
@@ -27,4 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  margin-bottom: 0;
+}
 </style>

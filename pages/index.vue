@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="site-wrapper">
     <site-header />
 
     <intro-section />
@@ -20,3 +20,12 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+</style>

@@ -5,6 +5,7 @@
 :root {
   --header-height: 80px;
   --color-primary: #38d591;
+  --color-primary-hover: #2eba7d;
   --color-bg: #f3f5f9;
   --color-text: #0f1822;
   --color-neutral: white;
@@ -26,7 +27,6 @@ button {
 body {
   font-size: 20px;
   line-height: 1.5;
-  padding-top: var(--header-height);
   background-color: var(--color-bg);
   color: var(--color-text);
 
@@ -35,21 +35,40 @@ body {
     --color-text: #f3f5f9;
     --color-neutral: #1f2b3c;
   }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 
 h1 {
   font-size: 42px;
+  margin-top: 0;
   line-height: 1.2;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-size: 38px;
   line-height: 1.2;
+  margin-top: 0;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 h3 {
   font-size: 32px;
   line-height: 1.2;
+  margin-top: 0;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
 }
 
 .primary-text {

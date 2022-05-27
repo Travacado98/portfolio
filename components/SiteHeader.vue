@@ -1,7 +1,7 @@
 <template>
   <header :class="{ scrolling }">
     <container>
-      <img class="logo" src="~/assets/images/logo.svg" alt="Travis Smith's logo">
+      <img class="logo" src="~/assets/images/logo.png" alt="Travis Smith's logo">
 
       <nav>
         <ul>
@@ -67,11 +67,17 @@ header {
     background-color: var(--color-neutral);
     box-shadow: var(--shadow);
     --header-height: 60px;
+
+    .logo {
+      max-height: 40px;
+    }
   }
 }
 .logo {
   display: flex;
   justify-content: flex-start;
+  max-height: 50px;
+  transition: all 0.2s ease-in-out;
 }
 ul {
   display: flex;
@@ -85,12 +91,34 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  transition: all 0.15s ease-in;
+  font-weight: 600;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.15s ease-in;
+  }
 
   &:visited {
     color: inherit;
   }
   &:hover {
-    border-bottom: solid 2px var(--color-primary);
+    color: var(--color-primary);
+    &::after {
+      max-width: 100%;
+      opacity: 1;
+    }
   }
 }
 .container {

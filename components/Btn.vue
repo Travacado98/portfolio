@@ -18,7 +18,6 @@ export default {
 <style lang="scss" scoped>
 button,
 a {
-  // outline: none;
   border: none;
   height: 60px;
   padding: 0 30px;
@@ -30,5 +29,15 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 700;
+  transition: background-color 0.1s ease-in;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+  @media (max-width: 600px) {
+    height: 50px;
+    padding: 0 20px;
+
+  }
 }
 </style>

@@ -31,4 +31,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+i {
+  cursor: pointer;
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: var(--color-primary)
+  }
+}
 </style>
