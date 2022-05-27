@@ -1,5 +1,5 @@
 <template>
-  <component :is="as" v-bind="$attrs" v-on="$listeners">
+  <component :is="as" class="btn" :class="{ secondary }" v-bind="$attrs" v-on="$listeners">
     <slot />
   </component>
 </template>
@@ -11,6 +11,7 @@ export default {
       type: String,
       default: 'button',
     },
+    secondary: Boolean,
   },
 };
 </script>
@@ -38,6 +39,14 @@ a {
     height: 50px;
     padding: 0 20px;
 
+  }
+  &.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+
+    &:hover {
+      background-color: var(--color-secondary-hover);
+    }
   }
 }
 </style>

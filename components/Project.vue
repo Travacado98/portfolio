@@ -19,6 +19,9 @@
       <btn as="a" :href="project.link" target="_blank">
         View Project
       </btn>
+      <btn as="a" :href="project.source" target="_blank" secondary>
+        View Source
+      </btn>
     </div>
   </div>
 </template>
@@ -94,5 +97,8 @@ export default {
   @media (max-width: 600px) {
     font-size: 24px;
   }
+}
+.btn {
+  margin-right: 5px;
 }
 </style>

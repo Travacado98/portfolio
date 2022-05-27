@@ -6,6 +6,8 @@
   --header-height: 80px;
   --color-primary: #38d591;
   --color-primary-hover: #2eba7d;
+  --color-secondary: #e6eaf0;
+  --color-secondary-hover: #d3d7de;
   --color-bg: #f3f5f9;
   --color-text: #0f1822;
   --color-neutral: white;
@@ -34,6 +36,8 @@ body {
     --color-bg: #17212e;
     --color-text: #f3f5f9;
     --color-neutral: #1f2b3c;
+    --color-secondary: #202c3c;
+    --color-secondary-hover: #2a3748;
   }
 
   @media (max-width: 600px) {

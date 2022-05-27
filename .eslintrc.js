@@ -19,6 +19,7 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'space-before-function-paren': 'off',
+    'vue/require-default-prop': 'off',
     semi: ['error', 'always'],
   },
 };
