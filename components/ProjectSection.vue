@@ -17,14 +17,14 @@ export default {
   data() {
     return {
       projects: [
-        {
-          title: 'Game of Thrones Wiki',
-          description: 'This is a dynamic wiki page that uses a public Game of Thrones API for its backend. It is a React SPA built using React hooks and Bootstrap.',
-          langs: ['react', 'boot', 'html', 'css', 'js'],
-          link: 'https://todolist-4e182.web.app/',
-          image: 'todo1.png',
-          source: 'https://github.com/Travacado98/asoiaf-react',
-        },
+        // {
+        //   title: 'Game of Thrones Wiki',
+        //   description: 'This is a dynamic wiki page that uses a public Game of Thrones API for its backend. It is a React SPA built using React hooks and Bootstrap.',
+        //   langs: ['react', 'boot', 'html', 'css', 'js'],
+        //   link: 'https://todolist-4e182.web.app/',
+        //   image: 'todo1.png',
+        //   source: 'https://github.com/Travacado98/asoiaf-react',
+        // },
         {
           title: 'Expense Tracker',
           description: 'This is a responsive Vue SPA that uses Firebase Firestore to keep track of a list of user expenses and calculate a running total.',
