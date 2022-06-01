@@ -3,12 +3,7 @@
     <img v-if="project.image" class="project-image" :src="require(`~/assets/images/${project.image}`)" alt="">
     <div>
       <h3>{{ project.title }}</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-        voluptates autem dignissimos veritatis consectetur quasi a voluptate
-        repellat? Officia, dignissimos culpa? Quis maiores accusamus ipsam
-        libero adipisci minus atque commodi?
-      </p>
+      <p>{{ project.description }}</p>
       <div class="lang-icons">
         <i
           v-for="lang in project.langs"
@@ -91,7 +86,7 @@ export default {
 .lang-icons {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 32px;
 
   @media (max-width: 600px) {
@@ -100,5 +95,9 @@ export default {
 }
 .btn {
   margin-right: 5px;
+}
+
+p {
+  margin-bottom: 30px;
 }
 </style>
