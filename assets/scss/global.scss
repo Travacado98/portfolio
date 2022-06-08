@@ -21,6 +21,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 20px);
+}
+
 body,
 button {
   font-family: Nunito, Arial, Helvetica, sans-serif;

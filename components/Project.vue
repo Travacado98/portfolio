@@ -9,7 +9,7 @@
           v-for="lang in project.langs"
           :key="lang"
           :class="images[lang]"
-        /></i>
+        />
       </div>
       <btn as="a" :href="project.link" target="_blank">
         View Project

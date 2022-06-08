@@ -26,6 +26,14 @@ export default {
         //   source: 'https://github.com/Travacado98/asoiaf-react',
         // },
         {
+          title: 'Weather Tracker App',
+          description: 'This is a simple, single-page app that provides weather tracking for Phoenix, AZ for the next five days using OpenWeatherMap API.',
+          langs: ['vue', 'html', 'css', 'sass', 'js'],
+          link: 'https://weather-app-8f8db.web.app/',
+          image: 'weather1.png',
+          source: 'https://github.com/Travacado98/weather-app',
+        },
+        {
           title: 'Expense Tracker',
           description: 'This is a responsive Vue SPA that uses Firebase Firestore to keep track of a list of user expenses and calculate a running total.',
           langs: ['vue', 'html', 'css', 'sass', 'js'],
@@ -40,6 +48,14 @@ export default {
           link: 'https://todolist-4e182.web.app/',
           image: 'todo1.png',
           source: 'https://github.com/Travacado98/to-do-list',
+        },
+        {
+          title: 'Los Angeles Mountains Website',
+          description: 'This is a single-page static website that uses jQuery for an accordion and tabs in one of the sections.',
+          langs: ['html', 'css', 'sass', 'js'],
+          link: 'https://losangeles-mountains.web.app/',
+          image: 'losmountains1.png',
+          source: 'https://github.com/Travacado98/losangeles-mountains',
         },
         {
           title: 'Milky Way Marketing Website',
